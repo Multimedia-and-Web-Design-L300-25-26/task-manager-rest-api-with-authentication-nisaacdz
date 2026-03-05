@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: ".env.test" });
 
 beforeAll(async () => {
   const uri = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/taskmanager_test";
